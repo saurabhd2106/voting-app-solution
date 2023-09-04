@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db
+  labels:
+    app: db-app
+spec:
+  containers:
+    - name: db-app
+      image: postgres:9.4

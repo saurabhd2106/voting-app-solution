@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: result-app
+  labels:
+    app: result-app
+    appType: backend
+spec:
+  containers:
+    - name: vote-app
+      image: saurabhd2106/result-app
