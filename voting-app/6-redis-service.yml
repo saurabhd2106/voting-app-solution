@@ -2,11 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis
+  labels:
+    appType: frontend
 spec:
   type: ClusterIP 
   selector:
     appType: frontend
   ports: 
     - name: http
-      port: 80 # Service Port
+      port: 6379 # Service Port
       targetPort: 6379 # Container Port

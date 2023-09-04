@@ -9,3 +9,5 @@ spec:
   containers:
     - name: vote-app
       image: saurabhd2106/vote-app
+      ports: 
+        - containerPort: 80

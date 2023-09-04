@@ -7,5 +7,7 @@ metadata:
     appType: frontend
 spec:
   containers:
-    - name: redis-app
+    - name: redis
       image: redis:5.0-alpine3.10
+      ports: 
+        - containerPort: 6379
