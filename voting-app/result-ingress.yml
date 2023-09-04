@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: ec2-13-127-13-201.ap-south-1.compute.amazonaws.com
+    http:
+      paths:
+      - path: /result
+        pathType: Prefix
+        backend:
+          service:
+            name: result-service
+            port:
+              number: 81
