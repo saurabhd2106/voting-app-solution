@@ -5,7 +5,7 @@ metadata:
 spec:
   type: ClusterIP 
   selector:
-    appType: backend
+    appType: frontend
   ports: 
     - name: http
       port: 80 # Service Port

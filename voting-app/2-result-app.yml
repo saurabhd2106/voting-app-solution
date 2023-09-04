@@ -4,7 +4,7 @@ metadata:
   name: result-app
   labels:
     app: result-app
-    appType: backend
+    appType: frontend
 spec:
   containers:
     - name: vote-app

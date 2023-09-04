@@ -4,6 +4,7 @@ metadata:
   name: db
   labels:
     app: db-app
+    appType: frontend
 spec:
   containers:
     - name: db-app

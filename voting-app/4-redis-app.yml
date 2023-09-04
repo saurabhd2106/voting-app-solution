@@ -4,6 +4,7 @@ metadata:
   name: redis
   labels:
     app: redis-app
+    appType: frontend
 spec:
   containers:
     - name: redis-app
