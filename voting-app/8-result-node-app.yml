@@ -8,6 +8,6 @@ spec:
     appType: frontend
   ports: 
     - name: http
-      port: 80 # Service Port
+      port: 81 # Service Port
       targetPort: 5001 # Container Port
       nodePort: 31231 # NodePort
